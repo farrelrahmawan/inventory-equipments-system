@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/frontImg2.jpeg" alt="">
+        <div class="text">
+          <span class="text-1">Every equipments needs <br> to be scanned</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/backImg3.jpeg" alt="">
+        <div class="text">
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">CHECK OUT/BACK IN ITEMS</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="button input-box">
+                <input type="button" value="CHECK OUT(AMBIL)" onclick="window.location='https://forms.gle/A7QGpsjxFLrQNXYV9';">
+              </div>
+              <div class="button input-box">
+                <input type="button" value="CHECK BACK IN(BALIKIN)" onclick="window.location='https://forms.gle/i8gytCZe35yBTZXo7';">
+              </div>
+              <div class="button input-box">
+                <input type="button" value="STATUS EQUIPMENTS" onclick="table_status()">
+                <script>
+                  function table_status() {
+                  window.open("table_status.html", "_blank");
+                  }
+                </script>
+              </div>
+              <div class="text sign-up-text">Input data? <label for="flip">Click Here!</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Input Data Inventory</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="button input-box">
+                <input type="button" value="INPUT DATA" onclick="window.location='https://forms.gle/7XNHdUNuBGupj6DL9';">
+              </div>
+            <div class="input-boxes">
+              <div class="button input-box">
+                <input type="button" value="CHECK DATA" onclick="table_data_input()">
+                <script>
+                  function table_data_input() {
+                  window.open("table_data_input.html", "_blank");
+                  }
+                </script>
+              </div>
+              <div class="text sign-up-text">Already input data? <label for="flip">Click here to check out!</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
